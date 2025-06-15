@@ -294,3 +294,41 @@
     background-color: #c5ebc1;
     padding: 20px;
   }
+
+  body {
+    font-family: Arial, sans-serif;
+}
+
+#commentsSection {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.deleteButton {
+    color: red;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#commentsSection {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.deleteButton {
+    color: red;
+    cursor: pointer;
+}
