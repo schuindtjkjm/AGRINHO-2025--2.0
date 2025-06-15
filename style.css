@@ -399,7 +399,7 @@
 #form-comentario button {
   padding: 0.8rem;
   background-color: #2a5d9f;
-  color: white;
+  color: rgb(213, 15, 15);
   border: none;
   border-radius: 8px;
   cursor: pointer;
