@@ -370,14 +370,14 @@
 .comentarios {
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #fefefe;
   border-radius: 12px;
   max-width: 700px;
-  box-shadow: 0 4px 8px rgba(124, 120, 120, 0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .comentarios h2 {
-  color: #2798b5;
+  color: #2a5d9f;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -392,7 +392,7 @@
 #form-comentario input,
 #form-comentario textarea {
   padding: 0.8rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
@@ -400,8 +400,8 @@
 
 #form-comentario button {
   padding: 0.8rem;
-  background-color: #2a9f9b;
-  color: rgb(156, 151, 151);
+  background-color: #2a5d9f;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -410,7 +410,7 @@
 }
 
 #form-comentario button:hover {
-  background-color: #588bce;
+  background-color: #1c3f6e;
 }
 
 #lista-comentarios {
@@ -420,7 +420,7 @@
 }
 
 .comentario {
-  background-color: #ffffff;
+  background-color: #f4f4f4;
   padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #2a5d9f;
@@ -430,19 +430,4 @@
   display: block;
   margin-bottom: 0.5rem;
   color: #333;
-}
-
-
-.comentario button.apagar {
-  background-color: #ffffff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin-top: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.comentario button.apagar:hover {
-  background-color: #cc00c2;
 }
