@@ -299,6 +299,9 @@
     font-family: Arial, sans-serif;
 }
 
+
+
+
 .comentarios {
   margin: 2rem auto;
   padding: 2rem;
@@ -324,7 +327,7 @@
 #form-comentario input,
 #form-comentario textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #f60e0e;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
@@ -350,7 +353,6 @@
   flex-direction: column;
   gap: 1rem;
 }
-
 
 .comentario {
   background-color: #b71e1e;
