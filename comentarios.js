@@ -42,26 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-<script>
-  const dbRef = firebase.database().ref("comentarios");
-
-  function enviarComentario() {
-    const nome = document.getElementById("nome").value;
-    const comentario = document.getElementById("comentario").value;
-
-    if (nome && comentario) {
-      dbRef.push({
-        nome: nome,
-        texto: comentario
-      });
-    }
-  }
-
-  dbRef.on("child_added", function(snapshot) {
-    const dado = snapshot.val();
-    const div = document.createElement("div");
-    div.innerHTML = `<strong>${dado.nome}</strong>: ${dado.texto}`;
-    document.getElementById("comentarios").appendChild(div);
-  });
-</script>
