@@ -435,3 +435,10 @@
   margin-bottom: 0.5rem;
   color: #333;
 }
+
+.caixa-comentario {
+  background-color: #d2e4d4; /* verdinho zinco claro */
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a3bfa8;
+}
