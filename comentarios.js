@@ -63,17 +63,6 @@ function apagarComentario(id) {
   comentarios = comentarios.filter(c => c.id !== id);
   localStorage.setItem('comentarios', JSON.stringify(comentarios));
   mostrarComentarios();
-}
-
-// COMENTÁRIOS
-const form = document.getElementById('form-comentario');
-const lista = document.getElementById('listaComentarios');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const texto = document.getElementById('comentarioInput').value;
-  const li = document.createElement('li');
-  li.textContent = texto;
 
   const botao = document.createElement('button');
   botao.textContent = 'x';
@@ -83,4 +72,7 @@ form.addEventListener('submit', function(e) {
   li.appendChild(botao);
   lista.appendChild(li);
   form.reset();
-});
+}
+
+
+
