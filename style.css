@@ -429,7 +429,7 @@ img {
 #form-comentario input,
 #form-comentario textarea {
   padding: 0.8rem;
-  border: 1px solid #69dbbb;
+  border: 1px solid #000000;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
