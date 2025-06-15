@@ -351,8 +351,9 @@
   gap: 1rem;
 }
 
+
 .comentario {
-  background-color: #f4f4f4;
+  background-color: #b71e1e;
   padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #2a5d9f;
@@ -363,7 +364,6 @@
   margin-bottom: 0.5rem;
   color: #333;
 }
-
 
 .comentarios {
   margin: 2rem auto;
