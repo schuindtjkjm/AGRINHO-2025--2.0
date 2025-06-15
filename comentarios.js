@@ -1,31 +1,44 @@
-document.getElementById("add-comment").addEventListener("click", function() {
-    var commentInput = document.getElementById("comment-input");
-    var commentText = commentInput.value;
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('form-comentario');
+  const nomeInput = document.getElementById('nome');
+  const mensagemInput = document.getElementById('mensagem');
+  const lista = document.getElementById('lista-comentarios');
 
-    if (commentText) {
-        var commentsDiv = document.getElementById("comments");
-        
-        // Cria um novo elemento de comentário
-        var commentDiv = document.createElement("div");
-        commentDiv.className = "comment";
-        commentDiv.textContent = commentText;
+  let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
 
-        // Adiciona um botão de apagar
-        var deleteButton = document.createElement("span");
-        deleteButton.className = "delete-button";
-        deleteButton.textContent = " [Apagar]";
-        
-        deleteButton.addEventListener("click", function() {
-            commentsDiv.removeChild(commentDiv);
-        });
+  comentarios.forEach((c, index) => adicionarComentario(c.nome, c.mensagem, index));
 
-        commentDiv.appendChild(deleteButton);
-        commentsDiv.appendChild(commentDiv);
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-        // Limpa o campo de entrada
-        commentInput.value = '';
-    } else {
-        alert("Por favor, escreva um comentário!");
+    const nome = nomeInput.value.trim();
+    const mensagem = mensagemInput.value.trim();
+
+    if (nome && mensagem) {
+      const novoComentario = { nome, mensagem };
+      comentarios.push(novoComentario);
+      localStorage.setItem('comentarios', JSON.stringify(comentarios));
+      adicionarComentario(nome, mensagem, comentarios.length - 1);
+      form.reset();
     }
-});
+  });
 
+  function adicionarComentario(nome, mensagem, index) {
+    const div = document.createElement('div');
+    div.classList.add('comentario');
+    div.innerHTML = `
+      <strong>${nome}</strong>
+      <p>${mensagem}</p>
+      <button class="apagar" data-index="${index}">Apagar</button>
+    `;
+    lista.prepend(div);
+
+    // Botão de apagar
+    div.querySelector('.apagar').addEventListener('click', function () {
+      const idx = parseInt(this.getAttribute('data-index'));
+      comentarios.splice(idx, 1);
+      localStorage.setItem('comentarios', JSON.stringify(comentarios));
+      location.reload(); // recarrega a página pra atualizar tudo (é mais simples)
+    });
+  }
+});
