@@ -405,7 +405,7 @@
 #form-comentario input,
 #form-comentario textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #83e6cd;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
@@ -414,7 +414,7 @@
 #form-comentario button {
   padding: 0.8rem;
   background-color: #2d9f8a;
-  color: rgb(184, 11, 11);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   cursor: pointer;
