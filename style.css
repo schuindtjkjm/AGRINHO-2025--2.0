@@ -307,7 +307,7 @@ img {
 }
 
 .imagem-ajustada {
-  max-width: 75%; /* ou qualquer valor tipo 80%, 600px... */
+  max-width: 75%; 
   height: auto;
   display: block;
   margin: 0 auto;
