@@ -1,25 +1,31 @@
-document.getElementById('addComment').addEventListener('click', function() {
-    const commentInput = document.getElementById('commentInput');
-    const commentText = commentInput.value;
+document.getElementById("add-comment").addEventListener("click", function() {
+    var commentInput = document.getElementById("comment-input");
+    var commentText = commentInput.value;
 
     if (commentText) {
-        const commentsSection = document.getElementById('commentsSection');
-
-        const commentDiv = document.createElement('div');
-        commentDiv.classList.add('comment');
+        var commentsDiv = document.getElementById("comments");
         
-        commentDiv.innerHTML = `
-            ${commentText} 
-            <span class="deleteButton">X</span>
-        `;
+        // Cria um novo elemento de comentário
+        var commentDiv = document.createElement("div");
+        commentDiv.className = "comment";
+        commentDiv.textContent = commentText;
 
-        commentsSection.appendChild(commentDiv);
-        commentInput.value = '';
-
-        // Adiciona funcionalidade para apagar o comentário
-        const deleteButton = commentDiv.querySelector('.deleteButton');
-        deleteButton.addEventListener('click', function() {
-            commentsSection.removeChild(commentDiv);
+        // Adiciona um botão de apagar
+        var deleteButton = document.createElement("span");
+        deleteButton.className = "delete-button";
+        deleteButton.textContent = " [Apagar]";
+        
+        deleteButton.addEventListener("click", function() {
+            commentsDiv.removeChild(commentDiv);
         });
+
+        commentDiv.appendChild(deleteButton);
+        commentsDiv.appendChild(commentDiv);
+
+        // Limpa o campo de entrada
+        commentInput.value = '';
+    } else {
+        alert("Por favor, escreva um comentário!");
     }
 });
+
