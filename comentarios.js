@@ -64,3 +64,23 @@ function apagarComentario(id) {
   localStorage.setItem('comentarios', JSON.stringify(comentarios));
   mostrarComentarios();
 }
+
+// COMENTÁRIOS
+const form = document.getElementById('form-comentario');
+const lista = document.getElementById('listaComentarios');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const texto = document.getElementById('comentarioInput').value;
+  const li = document.createElement('li');
+  li.textContent = texto;
+
+  const botao = document.createElement('button');
+  botao.textContent = 'x';
+  botao.className = 'deletar';
+  botao.onclick = () => li.remove();
+
+  li.appendChild(botao);
+  lista.appendChild(li);
+  form.reset();
+});
