@@ -368,14 +368,14 @@
 }
 
 .imagem-bonita {
-  max-width: 100%;      /* garante que ela nunca passe da largura da tela */
-  width: 100%;          /* ocupa toda a largura disponível */
-  height: auto;         /* mantém proporção */
-  max-height: 350px;    /* define uma altura limite */
-  object-fit: cover;    /* recorta mantendo estilo */
-  display: block;       /* tira espaços fantasmas ao redor */
-  margin: 0 auto;       /* centraliza */
-  border-radius: 10px;  /* deixa a imagem com cantinhos arredondados (estilo Pinterest 😍) */
+  max-width: 100%;      
+  width: 100%;          
+  height: auto;         
+  max-height: 350px;    
+  object-fit: cover;   
+  display: block;       
+  margin: 0 auto;       
+  border-radius: 10px;  
   box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* opcional: sombrazinha suave */
 }
 
