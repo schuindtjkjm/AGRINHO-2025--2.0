@@ -175,25 +175,19 @@ saúde, entre outros recursos.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sistema de Comentários</title>
-</head>
-<body>
-    <h1>Comentários</h1>
-    <input type="text" id="commentInput" placeholder="Digite seu comentário aqui...">
-    <button id="addComment">Adicionar Comentário</button>
-    
-    <div id="commentsSection"></div>
+   
+<section class="comentarios">
+  <h2>Deixe seu comentário</h2>
+  <form id="form-comentario">
+    <input type="text" id="nome" placeholder="Seu nome" required />
+    <textarea id="mensagem" placeholder="Escreva seu comentário aqui..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <div id="lista-comentarios"></div>
+</section>
 
-<div id="comment-section">
-    <h3>Comentários</h3>
-    <div id="comments"></div>
-    <textarea id="comment-input" placeholder="Digite seu comentário aqui..."></textarea>
-    <button id="add-comment">Adicionar Comentário</button>
-</div>
+
 
 </body>
 </html>
