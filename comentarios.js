@@ -1,5 +1,3 @@
-
-
 document.getElementById('addComment').addEventListener('click', function() {
     const commentInput = document.getElementById('commentInput');
     const commentText = commentInput.value;
