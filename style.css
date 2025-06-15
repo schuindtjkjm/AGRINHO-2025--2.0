@@ -413,7 +413,7 @@
 
 #form-comentario button {
   padding: 0.8rem;
-  background-color: #2a5d9f;
+  background-color: #2d9f8a;
   color: white;
   border: none;
   border-radius: 8px;
@@ -423,7 +423,7 @@
 }
 
 #form-comentario button:hover {
-  background-color: #1c3f6e;
+  background-color: #41d7bb;
 }
 
 #lista-comentarios {
