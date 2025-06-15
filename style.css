@@ -306,6 +306,17 @@ img {
   margin: 0 auto;
 }
 
+.imagem-ajustada {
+  max-width: 90%; /* ou qualquer valor tipo 80%, 600px... */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+
+
 .comentarios {
   margin: 2rem auto;
   padding: 2rem;
