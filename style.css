@@ -414,7 +414,7 @@
 #form-comentario button {
   padding: 0.8rem;
   background-color: #2d9f8a;
-  color: white;
+  color: rgb(184, 11, 11);
   border: none;
   border-radius: 8px;
   cursor: pointer;
