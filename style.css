@@ -359,7 +359,7 @@ img {
 
 #form-comentario button {
   padding: 0.8rem;
-  background-color: #25cea4;
+  background-color: #000000;
   color: #13b288;
   border: none;
   border-radius: 8px;
@@ -429,7 +429,7 @@ img {
 #form-comentario input,
 #form-comentario textarea {
   padding: 0.8rem;
-  border: 1px solid #000000;
+  border: 1px solid #66c4ac;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
