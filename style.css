@@ -457,7 +457,7 @@ img {
 }
 
 .comentario {
-  background-color: #83e6cd;
+  background-color: #000000;
   padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #66c4ac;
@@ -466,6 +466,6 @@ img {
 .comentario strong {
   display: block;
   margin-bottom: 0.5rem;
-  color: #000000;
+  color: #78eeca;
 }
 
