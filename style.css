@@ -359,8 +359,8 @@ img {
 
 #form-comentario button {
   padding: 0.8rem;
-  background-color: #2a5d9f;
-  color: #ffffff;
+  background-color: #25cea4;
+  color: #13b288;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -466,6 +466,6 @@ img {
 .comentario strong {
   display: block;
   margin-bottom: 0.5rem;
-  color: #bbefb9;
+  color: #000000;
 }
 
