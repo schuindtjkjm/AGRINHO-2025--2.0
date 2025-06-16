@@ -324,7 +324,12 @@ img {
 }
 
 
-
+body {
+  background-color: #ccffcc; /* Verde claro bem suave */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
 .comentarios {
   margin: 2rem auto;
@@ -359,11 +364,6 @@ img {
 
 #form-comentario button {
   padding: 0.8rem;
-  background-color: #ccffcc; /* Verde claro bem suave */
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #13b288;
   border: none;
   border-radius: 8px;
   cursor: pointer;
